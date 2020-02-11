@@ -1,0 +1,128 @@
+body {
+    background-image: url("../images/flower.png");
+}
+
+nav {
+    background-color: #ffffff;
+    border-bottom: 2px solid #dddddd;
+}
+
+/* style for my name (navbar-brand) on the navigation bar */
+#myName {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    text-align: center;
+    margin: 0;
+    padding: 0.7em;
+    position: absolute;
+    top: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    margin-bottom: 24px;
+    padding: 15px;
+}
+
+/* style for the header part of main contents (About Me, Portfolio, Contact) */
+header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4aaaa5;
+    border-bottom: 2px solid #dddddd;
+}
+
+.snsLinks {
+    margin-top: 2em;
+}
+
+/* parent element of the image and caption (.figure-caption) in the portfolio page */
+figure {
+    position: relative;
+}
+
+/* style for the figure-caption (image label) in the portfolio page */
+.figure-caption {
+    /* background-color: #4aaaa5; */
+    background-color: rgba(102, 102, 102, 0.8);
+    color: #ffffff;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    position: absolute;
+    bottom: 15%;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    padding: 0.5em;
+}
+
+footer {
+    background-color: #666666;
+    color: #ffffff;
+    text-align: center;
+    border-top: 8px solid #4aaaa5;
+}
+
+/* extra small screen */
+@media screen and (max-width: 575px) {
+    /* adjust the width of the container (main contents division) according to the screen size */
+    .container {
+        width: 90%;
+    }
+
+    /* adjust the position of myName(navbar-brand) according to the screen size */
+    #myName {
+        left: 5%;
+    }
+}
+
+/*  small screen */
+@media screen and (min-width: 576px) {
+    /* adjust the width of the container (main contents division) according to the screen size */
+    .container {
+        width: 80%;
+    }
+
+    /* adjust the position of myName(navbar-brand) according to the screen size */
+    #myName {
+        left: 10%;
+    }
+}
+
+/* medium screen */
+@media screen and (min-width: 768px) {
+    /* adjust the width of the container (main contents division) according to the screen size */
+    .container {
+        width: 70%;
+    }
+
+    /* adjust the position of myName(navbar-brand) according to the screen size */
+    #myName {
+        left: 15%;
+    }
+}
+
+/* large screen */
+@media screen and (min-width: 992px) {
+    /* adjust the width of the container (main contents division) according to the screen size */
+    .container {
+        width: 75%;
+    }
+
+    /* adjust the position of myName(navbar-brand) according to the screen size */
+    #myName {
+        left: 12.5%;
+    }
+}
+
+/* extra large screen */
+@media screen and (min-width: 1200px) {
+    /* adjust the width of the container (main contents division) according to the screen size */
+    .container {
+        width: 60%;
+    }
+
+    /* adjust the position of myName(navbar-brand) according to the screen size */
+    #myName {
+        left: 20%;
+    }
+}
